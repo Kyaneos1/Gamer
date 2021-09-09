@@ -1,0 +1,39 @@
+$discordBlurple: #7289DA
+$discordWhite: #FFFFFF
+$discordGreyple: #99AAB5
+$discordNotBlack: #2C2F33
+$discordDark: #23272A
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+.sidebar
+  width: 96px
+  margin: 15px auto
+  padding: 8px 0
+  background: $discordDark
+  
+  &-server
+    overflow: hidden
+  
+  &-serverLink
+    display: block
+    padding: 8px 0
+    width: 100%
+    transition: all .35s
+    
+    &:hover
+      background: $discordNotBlack
+    
+    &.--activeServer
+      background: $discordNotBlack
+  
+  &-serverIcon
+    width: 64px
+    height: auto
+    display: block
+    margin: auto
+    border-raidus: 10px
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .15)
